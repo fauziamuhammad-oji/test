@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100a16">
+    <meta name="description" content="Portofolio Muhammad Fauzia — mahasiswa Teknologi Rekayasa Komputer yang berfokus pada IoT, embedded systems, hardware, dan networking.">
+    <meta name="author" content="Muhammad Fauzia">
+    <title>Muhammad Fauzia — IoT & Hardware Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
+    <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="nav shell" aria-label="Navigasi utama">
+            <a class="brand" href="#home" aria-label="Fauzia IoT, kembali ke beranda">
+                <span class="brand-mark">F<span>.</span></span>
+                <span class="brand-copy"><strong>Fauzia<span class="accent">.IoT</span></strong><small>Engineer in progress</small></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">Tentang</a><a href="#projects">Galeri</a><a href="#dashboard">IoT Lab</a><a href="#experience">Komunitas</a><a href="#contact">Kontak</a>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan tema terang"><span aria-hidden="true">☼</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero shell" id="home">
+            <div class="hero-copy reveal">
+                <div class="eyebrow"><span class="status-dot"></span> OPEN TO COLLABORATION <span class="eyebrow-divider"></span> BOGOR, ID</div>
+                <div class="hero-clock" aria-label="Waktu saat ini"><strong id="liveClock">--:--:--</strong><span id="liveDate">Memuat tanggal…</span></div>
+                <p class="hero-intro">Halo, saya Muhammad Fauzia.</p>
+                <h1>Merancang teknologi<br>yang <em>terasa nyata.</em></h1>
+                <p class="hero-description">Mahasiswa Teknologi Rekayasa Komputer di IPB University. Saya tertarik menghubungkan hardware, software, dan manusia lewat solusi yang berguna.</p>
+                <div class="role-line"><span class="role-prefix">Saya tertarik pada</span> <span id="typewriter" aria-live="polite">IoT Engineering</span><span class="type-caret" aria-hidden="true"></span></div>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Jelajahi proyek <span aria-hidden="true">↗</span></a>
+                    <a class="button button-quiet" href="#contact">Mari terhubung <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-socials" aria-label="Media sosial">
+                    <a href="https://github.com/fauziamuhammad-oji" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                    <a href="https://www.instagram.com/mfauziaaa_/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
+                </div>
+            </div>
+
+            <div class="hero-art profile-art reveal">
+                <div class="profile-orbit orbit-one"></div><div class="profile-orbit orbit-two"></div>
+                <div class="profile-glow"></div>
+                <figure class="profile-frame">
+                    <img src="assets/profile-illustration.svg" alt="Ilustrasi avatar monogram MF, placeholder sementara dan bukan foto asli Muhammad Fauzia">
+                    <figcaption>ILUSTRASI PROFIL · GANTI DENGAN FOTO ASLI</figcaption>
+                </figure>
+                <span class="art-chip chip-one">FAUZIA.IOT <i></i></span><span class="art-chip chip-two">IPB · 2026 <i></i></span>
+                <span class="art-index">HARDWARE × SOFTWARE</span>
+            </div>
+            <a class="scroll-hint" href="#about"><span></span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <section class="section shell about-section" id="about">
+            <div class="section-heading reveal"><p class="eyebrow">01 — TENTANG SAYA</p><h2>Teknologi, dengan<br><em>tujuan yang jelas.</em></h2></div>
+            <div class="about-layout">
+                <div class="about-copy reveal">
+                    <p>Saya adalah mahasiswa <strong>Teknologi Rekayasa Komputer di IPB University</strong> yang mengeksplorasi IoT, embedded systems, networking, dan hardware engineering.</p>
+                    <p>Saya senang membangun prototipe, mengintegrasikan perangkat keras dan perangkat lunak, serta belajar lewat kerja tim dan eksperimen.</p>
+                    <blockquote>“Hardware is the Soul,<br>Software is the Mind.”</blockquote>
+                    <div class="about-facts"><div><span>PROGRAM STUDI</span><strong>Teknologi Rekayasa Komputer</strong></div><div><span>UNIVERSITAS</span><strong>IPB University</strong></div></div>
+                </div>
+                <aside class="about-focus reveal"><span class="dashboard-kicker">FAUZIA.IOT / FOCUS</span><h3>Belajar merangkai<br>ide menjadi sistem.</h3><p>IoT · Embedded · Hardware · Networking</p><div class="focus-line"><span></span></div><small>IPB UNIVERSITY · TEKNOLOGI REKAYASA KOMPUTER</small></aside>
+            </div>
+        </section>
+
+        <section class="section shell skills-section" id="skills">
+            <div class="section-heading reveal"><p class="eyebrow">02 — AREA YANG SAYA EKSPLORASI</p><h2>Belajar lintas<br><em>lapisan teknologi.</em></h2></div>
+            <div class="skills-grid">
+                <article class="skill-card reveal"><span class="skill-number">01</span><span class="skill-icon">⌁</span><h3>IoT & Embedded</h3><p>Menghubungkan sensor, mikrokontroler, protokol, dan dashboard.</p><div class="tag-list"><span>ESP32</span><span>Arduino</span><span>MQTT</span><span>Wokwi</span></div></article>
+                <article class="skill-card reveal"><span class="skill-number">02</span><span class="skill-icon">⌘</span><h3>Hardware</h3><p>Perakitan, wiring, integrasi komponen, dan troubleshooting.</p><div class="tag-list"><span>HX711</span><span>TFT</span><span>Relay</span><span>Ultrasonic</span></div></article>
+                <article class="skill-card reveal"><span class="skill-number">03</span><span class="skill-icon">⌗</span><h3>Networking</h3><p>Memahami infrastruktur, komunikasi data, dan konfigurasi jaringan.</p><div class="tag-list"><span>TCP/IP</span><span>OSPF</span><span>VLAN</span><span>Packet Tracer</span></div></article>
+                <article class="skill-card reveal"><span class="skill-number">04</span><span class="skill-icon">⟡</span><h3>Software & Cloud</h3><p>Mengembangkan antarmuka dan layanan untuk sistem terhubung.</p><div class="tag-list"><span>C/C++</span><span>JavaScript</span><span>Python</span><span>AWS</span><span>Linux</span></div></article>
+            </div>
+        </section>
+
+        <section class="section shell gallery-section" id="projects">
+            <div class="section-heading heading-row reveal"><div><p class="eyebrow">03 — GALERI VISUAL</p><h2>Catatan kecil<br><em>di balik proses.</em></h2></div><p class="gallery-intro">Pilih kategori untuk melihat 8 ilustrasi. Setiap ilustrasi punya catatan dan bisa diunduh sebagai SVG resolusi tinggi dengan bingkai vintage.</p></div>
+            <div class="gallery-categories reveal" id="galleryCategories" role="group" aria-label="Kategori galeri"></div>
+            <p class="gallery-disclaimer">Ilustrasi sementara, bukan foto dokumentasi proyek. Ganti aset di <code>script.js</code> setelah foto asli tersedia.</p>
+            <div class="photo-gallery" id="photoGallery" aria-live="polite"></div>
+        </section>
+
+        <section class="section shell dashboard-section" id="dashboard">
+            <div class="section-heading heading-row reveal"><div><p class="eyebrow">04 — INTERACTIVE IOT LAB</p><h2>Eksplorasi sensor,<br><em>secara transparan.</em></h2></div><div class="mode-toggle" role="group" aria-label="Sumber data sensor"><button class="is-active" data-mode="simulation" type="button" aria-pressed="true">Demo</button><button data-mode="real" type="button" aria-pressed="false">Perangkat nyata</button></div></div>
+            <div class="dashboard-shell reveal">
+                <div class="dashboard-top"><div><span class="dashboard-kicker">ENVIRONMENT MONITOR</span><h3>Data sensor</h3><div class="dashboard-clock"><strong id="dashboardClock">--:--:--</strong><span id="dashboardDate">Memuat tanggal…</span></div></div><div class="dashboard-status"><span class="simulation-badge" id="dataModeLabel">SIMULASI · BUKAN SENSOR NYATA</span><small id="sensorUpdated">Pembaruan --:--</small></div></div>
+                <div class="sensor-cards"><article><span>SUHU</span><strong id="sensorTemperature">--<small>°C</small></strong><i>Temperatur lingkungan</i></article><article><span>KELEMBAPAN</span><strong id="sensorHumidity">--<small>%</small></strong><i>Kelembapan relatif</i></article></div>
+                <div class="chart-panel"><div class="chart-heading"><div><span class="dashboard-kicker">LIVE SAMPLE HISTORY</span><h3>Suhu & kelembapan</h3></div><span class="chart-legend"><i></i> Suhu <b></b> Kelembapan</span></div><div class="chart-wrap"><canvas id="sensorChart" aria-label="Grafik data sensor simulasi"></canvas><p class="chart-fallback" id="chartFallback" hidden>Grafik tidak tersedia. Muat ulang halaman saat terhubung ke internet.</p></div><div class="chart-foot"><span id="sampleCount">0 sampel</span><span id="sensorStats">Menunggu sampel pertama…</span></div></div>
+                <p class="dashboard-note" id="deviceMessage">Demo menghasilkan nilai contoh di browser. Mode perangkat nyata tetap nonaktif sampai endpoint milik Anda dikonfigurasi di <code>script.js</code>.</p>
+            </div>
+        </section>
+
+        <section class="section shell community-section" id="experience">
+            <div class="section-heading heading-row reveal"><div><p class="eyebrow">05 — KOMUNITAS & PENGALAMAN</p><h2>Tempat bertumbuh<br><em>bersama orang lain.</em></h2></div><p class="gallery-intro">Pengalaman organisasi membentuk cara saya berkomunikasi, berkolaborasi, dan mengerjakan sesuatu sampai selesai.</p></div>
+            <div class="community-grid">
+                <article class="community-card community-feature reveal"><span class="community-index">01 / ORGANISASI</span><div class="community-symbol">H<span>+</span></div><span class="community-date">2026 — SEKARANG</span><h3>HIMAVO Micro IT</h3><p>BPH Umum — koordinasi internal, follow-up program kerja, komunikasi antarbagian, dan pengembangan organisasi.</p><div class="community-tags"><span>Koordinasi</span><span>Komunikasi</span><span>IPB</span></div></article>
+                <article class="community-card reveal"><span class="community-index">02 / OLAHRAGA</span><div class="community-symbol">V<span>↗</span></div><span class="community-date">2025 — SEKARANG</span><h3>UKM Volleyball IPB</h3><p>Media, branding, kegiatan olahraga, dan koordinasi aktivitas komunitas.</p><div class="community-tags"><span>Media</span><span>Branding</span><span>Teamwork</span></div></article>
+                <article class="community-card reveal"><span class="community-index">03 / KAMPUS</span><div class="community-symbol">V<span>+</span></div><span class="community-date">2025</span><h3>VISCO 2025</h3><p>Brand Ambassador yang mewakili Teknologi Rekayasa Komputer dalam kegiatan Vokasi IPB.</p><div class="community-tags"><span>Representasi</span><span>Komunikasi</span></div></article>
+                <article class="community-card community-wide reveal"><span class="community-index">04 / EVENT CREW</span><div class="community-symbol">IPB<span>°</span></div><span class="community-date">2026</span><h3>LIGATEK · IPB Run · Kampus Expo</h3><p>Koordinasi pertandingan voli, area finish, komunikasi peserta, dan kebutuhan teknis lapangan.</p><div class="community-tags"><span>Koordinator</span><span>Operasional</span><span>Kolaborasi</span></div></article>
+            </div>
+            <div class="community-achievements reveal"><span class="dashboard-kicker">MOMEN YANG SAYA SYUKURI</span><div><p>Finalis 10 besar <strong>Business Plan Competition 2024</strong></p><p>Juara 1 voli putra <strong>tingkat Kota Bogor</strong></p><p>Cofasil pendamping <strong>Teknologi Rekayasa Komputer</strong></p></div></div>
+        </section>
+
+        <section class="section shell certificates-section" id="certificates">
+            <div class="section-heading reveal"><p class="eyebrow">06 — SERTIFIKAT</p><h2>Belajar, lalu<br><em>terus berkembang.</em></h2></div>
+            <div class="certificate-empty reveal"><span aria-hidden="true">✳</span><div><h3>Galeri sertifikat siap diisi.</h3><p>Belum ada gambar atau data sertifikat asli di folder proyek. Tambahkan informasinya di <code>script.js</code> agar tampil di sini—tanpa placeholder sertifikat fiktif.</p></div></div>
+            <div class="certificates-grid" id="certificatesGrid"></div>
+        </section>
+
+        <section class="section shell github-section" id="github">
+            <div class="section-heading heading-row reveal"><div><p class="eyebrow">07 — OPEN SOURCE & EKSPERIMEN</p><h2>Repository<br><em>terkini.</em></h2></div><a class="text-link" href="https://github.com/fauziamuhammad-oji" target="_blank" rel="noopener noreferrer">Profil GitHub <span>↗</span></a></div>
+            <div class="github-grid" id="githubGrid" aria-live="polite"><p class="empty-state">Memuat repository publik…</p></div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-inner shell reveal">
+                <div class="contact-intro"><p class="eyebrow">08 — MULAI PERCAKAPAN</p><h2>Ada ide menarik?<br><em>Mari kita bangun.</em></h2><p class="contact-copy">Terbuka untuk kolaborasi IoT, embedded systems, hardware, networking, maupun project teknologi kampus.</p>
+                    <div class="contact-side"><a href="mailto:muhammadfauzia0704@gmail.com">muhammadfauzia0704@gmail.com <span>↗</span></a><a href="https://wa.me/6282121764347?text=Halo%20Muhammad%20Fauzia%2C%20saya%20ingin%20berdiskusi%20mengenai%20project." target="_blank" rel="noopener noreferrer">WhatsApp · 0821-2176-4347 <span>↗</span></a><a href="https://www.instagram.com/mfauziaaa_/" target="_blank" rel="noopener noreferrer">Instagram · @mfauziaaa_ <span>↗</span></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/fauziamuhammad-oji" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div>
+                </div>
+                <div class="contact-tools">
+                    <form class="contact-form" id="contactForm">
+                        <label for="senderName">Nama</label><input id="senderName" name="name" autocomplete="name" placeholder="Nama Anda" required>
+                        <label for="senderEmail">Email</label><input id="senderEmail" name="email" type="email" autocomplete="email" placeholder="email@contoh.com" required>
+                        <label for="senderMessage">Pesan</label><textarea id="senderMessage" name="message" rows="4" placeholder="Ceritakan sedikit tentang ide Anda..." required></textarea>
+                        <button class="button button-primary" type="submit">Buka aplikasi email <span>↗</span></button>
+                        <p class="fine-print">Formulir ini menyusun pesan di aplikasi email Anda; tidak mengirim data ke server.</p>
+                    </form>
+                    <div class="cv-card"><span class="cv-mark">MF</span><div><strong>Muhammad Fauzia</strong><p>IoT & Hardware Engineer</p></div><a class="button button-quiet" href="CV Muhammad Fauzia IPB University.pdf" download>Unduh CV <span>↓</span></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer shell"><a class="brand footer-brand" href="#home"><span class="brand-mark">F<span>.</span></span><span class="brand-copy"><strong>Fauzia<span class="accent">.IoT</span></strong><small>Hardware is the Soul, Software is the Mind.</small></span></a><p>© 2026 Muhammad Fauzia | Mahasiswa Teknologi Rekayasa Komputer IPB</p><a class="back-top" href="#home">Kembali ke atas ↑</a></footer>
+
+    <dialog class="gallery-dialog" id="galleryDialog" aria-labelledby="galleryDialogTitle"><button class="dialog-close" type="button" aria-label="Tutup foto">×</button><div class="gallery-dialog-body"><div class="vintage-print" id="vintagePrint"></div><div class="gallery-dialog-copy"><p class="eyebrow" id="galleryDialogCategory">VISUAL JOURNAL</p><h2 id="galleryDialogTitle"></h2><p id="galleryDialogNote"></p><p class="gallery-dialog-caption">Catatan ilustrasi · Fauzia.IoT<br>Ilustrasi portfolio, bukan foto dokumentasi asli.</p><a class="button button-primary download-art" id="downloadArtwork" download>Unduh HD · SVG <span>↓</span></a></div></div></dialog>
+    <button class="back-top-float" id="backTopFloat" type="button" aria-label="Kembali ke atas">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

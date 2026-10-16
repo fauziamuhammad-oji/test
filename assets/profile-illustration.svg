@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-labelledby="title description">
+  <title id="title">Ilustrasi profil monogram MF</title>
+  <desc id="description">Placeholder ilustratif bernuansa ungu dan pink, bukan foto asli.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#261637"/>
+      <stop offset=".55" stop-color="#171020"/>
+      <stop offset="1" stop-color="#0c0911"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#cf9cff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#ff93cf" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ac77db"/>
+      <stop offset="1" stop-color="#50366b"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" fill="url(#backdrop)"/>
+  <circle cx="460" cy="410" r="290" fill="#b579e8" opacity=".18" filter="url(#softGlow)"/>
+  <circle cx="450" cy="408" r="286" fill="none" stroke="#cba3ff" stroke-opacity=".25"/>
+  <circle cx="450" cy="408" r="258" fill="none" stroke="#ff9bd5" stroke-opacity=".2" stroke-dasharray="4 12"/>
+  <path d="M0 833C165 753 260 772 450 833s294 45 450-18v285H0z" fill="#130d1a" opacity=".78"/>
+  <path d="M167 1000c20-196 125-296 283-296s262 100 283 296" fill="url(#jacket)" stroke="#d4b2f2" stroke-opacity=".45" stroke-width="4"/>
+  <path d="m364 722 86 108 87-108 42 34-76 244H399l-77-244z" fill="#171020"/>
+  <path d="m364 722 86 108-48 170-87-244zM537 722l-87 108 49 170 84-244z" fill="#c597ef" opacity=".66"/>
+  <path d="M375 350c0-116 34-176 78-176s78 60 78 176v83c0 102-41 175-78 175s-78-73-78-175z" fill="#d69d87"/>
+  <path d="M363 378c-27-129 11-240 105-242 79-1 120 58 113 164-27-3-57-15-83-35-30 40-79 67-135 75z" fill="#24162b"/>
+  <path d="M363 378c-13-66-7-125 10-164 1 46 20 83 49 112-22 23-42 41-59 52zM581 315c21-62 18-119-8-153 59 42 72 114 57 194-15-11-32-24-49-41z" fill="#392242"/>
+  <path d="M411 431h24m57 0h24" stroke="#4b293f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M425 501c17 16 35 16 52 0" fill="none" stroke="#984d73" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="165" cy="273" r="5" fill="#ff9bd5"/>
+  <circle cx="710" cy="326" r="6" fill="#cba3ff"/>
+  <circle cx="703" cy="650" r="4" fill="#ff9bd5"/>
+  <path d="M96 690h122m464-396h112M113 367h73m521 378h75" stroke="url(#halo)" stroke-opacity=".65"/>
+  <rect x="315" y="876" width="270" height="94" rx="47" fill="#140e1c" stroke="#cba3ff" stroke-opacity=".58"/>
+  <text x="450" y="936" text-anchor="middle" fill="#f7eefa" font-family="Georgia,serif" font-size="47" letter-spacing="7">MF</text>
+  <text x="450" y="1048" text-anchor="middle" fill="#d9c4e8" font-family="monospace" font-size="16" letter-spacing="4">ILUSTRASI PROFIL · PLACEHOLDER</text>
+</svg>
